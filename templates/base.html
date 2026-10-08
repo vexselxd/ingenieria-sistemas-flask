@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ingeniería en Sistemas{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- RAIN CANVAS -->
+    <canvas id="rain-canvas"></canvas>
+
+    <!-- SCANLINES OVERLAY -->
+    <div class="scanlines"></div>
+
+    <!-- GRID OVERLAY -->
+    <div class="grid-overlay"></div>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">SYS<span class="logo-accent">ENG</span></span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">
+                <span class="nav-icon">⬡</span> INICIO
+            </a></li>
+            <li><a href="{{ url_for('ramas') }}" class="nav-link {% if request.endpoint == 'ramas' %}active{% endif %}">
+                <span class="nav-icon">◈</span> RAMAS
+            </a></li>
+            <li><a href="{{ url_for('empleos') }}" class="nav-link {% if request.endpoint == 'empleos' %}active{% endif %}">
+                <span class="nav-icon">◆</span> EMPLEOS
+            </a></li>
+        </ul>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span class="status-text">ONLINE</span>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-line"></div>
+            <p class="footer-text">
+                <span class="footer-bracket">// </span>
+                INGENIERÍA EN SISTEMAS &amp; COMPUTACIÓN
+                <span class="footer-bracket"> //</span>
+            </p>
+            <p class="footer-sub">El futuro es código. El código es poder.</p>
+        </div>
+    </footer>
+
+    <script>
+    // ============= RAIN EFFECT =============
+    const canvas = document.getElementById('rain-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initDrops();
+    });
+
+    const COLS = Math.floor(canvas.width / 18);
+    let drops = [];
+
+    function initDrops() {
+        drops = [];
+        const cols = Math.floor(canvas.width / 18);
+        for (let i = 0; i < cols; i++) {
+            drops.push({
+                x: i * 18 + Math.random() * 10,
+                y: Math.random() * -canvas.height,
+                speed: 0.4 + Math.random() * 0.8,
+                length: 10 + Math.random() * 20,
+                opacity: 0.08 + Math.random() * 0.18,
+                width: 0.5 + Math.random() * 1.5,
+                color: Math.random() < 0.5 ? '0, 200, 255' : Math.random() < 0.5 ? '255, 80, 0' : '255, 200, 0'
+            });
+        }
+    }
+
+    initDrops();
+
+    function drawRain() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        drops.forEach(drop => {
+            // Draw streaks (multiple segments fading up)
+            for (let seg = 0; seg < drop.length; seg++) {
+                const segY = drop.y - seg * 8;
+                const alpha = drop.opacity * (1 - seg / drop.length);
+                ctx.beginPath();
+                ctx.strokeStyle = `rgba(${drop.color}, ${alpha})`;
+                ctx.lineWidth = drop.width;
+                ctx.moveTo(drop.x, segY);
+                ctx.lineTo(drop.x + drop.width * 0.3, segY + 7);
+                ctx.stroke();
+            }
+
+            // Droplet head - brighter
+            ctx.beginPath();
+            ctx.arc(drop.x, drop.y, drop.width * 0.9, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${drop.color}, ${drop.opacity * 2.5})`;
+            ctx.fill();
+
+            drop.y += drop.speed;
+
+            if (drop.y > canvas.height + 100) {
+                drop.y = -drop.length * 8 - Math.random() * 300;
+                drop.x = Math.random() * canvas.width;
+                drop.speed = 0.4 + Math.random() * 0.8;
+            }
+        });
+
+        requestAnimationFrame(drawRain);
+    }
+
+    drawRain();
+
+    // ============= GLITCH TEXT =============
+    const glitchEls = document.querySelectorAll('.glitch');
+    glitchEls.forEach(el => {
+        el.setAttribute('data-text', el.textContent);
+    });
+
+    // ============= ANIMATED COUNTERS =============
+    function animateCounters() {
+        document.querySelectorAll('.counter').forEach(el => {
+            const target = parseInt(el.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(current).toLocaleString();
+            }, 16);
+        });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.disconnect();
+            }
+        });
+    });
+
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) observer.observe(statsSection);
+    </script>
+</body>
+</html>

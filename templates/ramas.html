@@ -1,0 +1,343 @@
+{% extends "base.html" %}
+{% block title %}Ingeniería en Sistemas | Ramas{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+    <div class="page-hero-bg-text">RAMAS</div>
+    <div class="page-hero-content">
+        <div class="hero-tag">// ESPECIALIZACIONES //</div>
+        <h1 class="page-hero-title glitch">RAMAS &amp; <span class="hero-accent">SUB-ÁREAS</span></h1>
+        <p class="page-hero-sub">La Ingeniería en Sistemas es un universo de posibilidades. Aquí están sus principales ramas.</p>
+    </div>
+</section>
+
+<!-- ÁRBOL DE RAMAS -->
+<section class="section" id="arbol">
+    <div class="section-label">// 01 — MAPA DE ESPECIALIDADES</div>
+    <h2 class="section-title centered">El ecosistema de <span class="accent-cyan">Sistemas</span></h2>
+    <p class="section-intro">Cada rama es una especialidad con su propia demanda, herramientas y mundo de posibilidades.</p>
+
+    <div class="branches-grid">
+
+        <!-- RAMA 1: DESARROLLO DE SOFTWARE -->
+        <div class="branch-card glow-cyan" id="dev">
+            <div class="branch-header">
+                <div class="branch-icon">⟨/⟩</div>
+                <div class="branch-num">01</div>
+            </div>
+            <h3 class="branch-title">Desarrollo de Software</h3>
+            <p class="branch-desc">La rama más amplia. Diseñar y construir aplicaciones web, móviles y de escritorio desde cero.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Frontend Development</strong>
+                        <span>HTML, CSS, JavaScript, React, Vue, Angular. Lo que el usuario ve y toca.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>Backend Development</strong>
+                        <span>Servidores, APIs, lógica de negocio. Node.js, Django, Spring Boot, Laravel.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>Desarrollo Móvil</strong>
+                        <span>Apps para Android e iOS. Kotlin, Swift, Flutter, React Native.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Full Stack</strong>
+                        <span>Domina tanto frontend como backend. El desarrollador más versátil.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">Python</span><span class="tool-badge">JavaScript</span>
+                <span class="tool-badge">Java</span><span class="tool-badge">Git</span>
+            </div>
+        </div>
+
+        <!-- RAMA 2: INTELIGENCIA ARTIFICIAL -->
+        <div class="branch-card glow-orange" id="ia">
+            <div class="branch-header">
+                <div class="branch-icon">🧠</div>
+                <div class="branch-num">02</div>
+            </div>
+            <h3 class="branch-title">Inteligencia Artificial &amp; ML</h3>
+            <p class="branch-desc">La rama más demandada del futuro. Máquinas que aprenden, razonan y superan a los humanos en tareas específicas.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Machine Learning</strong>
+                        <span>Algoritmos que aprenden de datos: regresión, clasificación, clustering.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>Deep Learning</strong>
+                        <span>Redes neuronales profundas para reconocimiento de imágenes, voz y texto.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>Procesamiento del Lenguaje Natural (NLP)</strong>
+                        <span>Chatbots, traducción automática, análisis de sentimientos, LLMs.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Visión Computacional</strong>
+                        <span>Sistemas que "ven": reconocimiento facial, detección de objetos, conducción autónoma.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">TensorFlow</span><span class="tool-badge">PyTorch</span>
+                <span class="tool-badge">Scikit-learn</span><span class="tool-badge">CUDA</span>
+            </div>
+        </div>
+
+        <!-- RAMA 3: CIBERSEGURIDAD -->
+        <div class="branch-card glow-yellow" id="seg">
+            <div class="branch-header">
+                <div class="branch-icon">🛡️</div>
+                <div class="branch-num">03</div>
+            </div>
+            <h3 class="branch-title">Ciberseguridad</h3>
+            <p class="branch-desc">Proteger sistemas, redes y datos de ataques. Los guardianes digitales del mundo conectado.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Ethical Hacking / Pentesting</strong>
+                        <span>Atacar sistemas con permiso para encontrar y corregir vulnerabilidades.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>Forense Digital</strong>
+                        <span>Investigar delitos informáticos, recuperar evidencia y rastrear ciberataques.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>Seguridad en la Nube</strong>
+                        <span>Proteger infraestructuras cloud, gestión de identidades y accesos (IAM).</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Criptografía</strong>
+                        <span>Diseño de algoritmos de cifrado, PKI, blockchain y sistemas de autenticación.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">Kali Linux</span><span class="tool-badge">Wireshark</span>
+                <span class="tool-badge">Metasploit</span><span class="tool-badge">Burp Suite</span>
+            </div>
+        </div>
+
+        <!-- RAMA 4: CLOUD & DEVOPS -->
+        <div class="branch-card glow-cyan" id="cloud">
+            <div class="branch-header">
+                <div class="branch-icon">☁️</div>
+                <div class="branch-num">04</div>
+            </div>
+            <h3 class="branch-title">Cloud &amp; DevOps</h3>
+            <p class="branch-desc">Automatizar, escalar y gestionar infraestructura tecnológica a nivel global usando la nube.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Cloud Architecture</strong>
+                        <span>Diseñar infraestructuras escalables en AWS, Azure o Google Cloud.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>DevOps Engineering</strong>
+                        <span>CI/CD pipelines, automatización de deployment, integración continua.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>Contenedores &amp; Orquestación</strong>
+                        <span>Docker, Kubernetes, microservicios y arquitecturas serverless.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>SRE (Site Reliability Engineering)</strong>
+                        <span>Garantizar disponibilidad, rendimiento y confiabilidad de sistemas en producción.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">AWS</span><span class="tool-badge">Docker</span>
+                <span class="tool-badge">Kubernetes</span><span class="tool-badge">Terraform</span>
+            </div>
+        </div>
+
+        <!-- RAMA 5: DATA SCIENCE -->
+        <div class="branch-card glow-orange" id="data">
+            <div class="branch-header">
+                <div class="branch-icon">📊</div>
+                <div class="branch-num">05</div>
+            </div>
+            <h3 class="branch-title">Ciencia de Datos &amp; Big Data</h3>
+            <p class="branch-desc">Los datos son el nuevo petróleo. Extraer, analizar y visualizar información para tomar decisiones inteligentes.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Data Analysis</strong>
+                        <span>Limpiar, explorar y visualizar datos con Pandas, Matplotlib, Power BI, Tableau.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>Data Engineering</strong>
+                        <span>Construir pipelines de datos, ETL, data warehouses y arquitecturas lakehouse.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>Big Data</strong>
+                        <span>Procesar volúmenes masivos con Hadoop, Spark y tecnologías distribuidas.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Business Intelligence</strong>
+                        <span>Transformar datos en estrategia empresarial con dashboards y reportes ejecutivos.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">Python</span><span class="tool-badge">R</span>
+                <span class="tool-badge">Spark</span><span class="tool-badge">Power BI</span>
+            </div>
+        </div>
+
+        <!-- RAMA 6: REDES -->
+        <div class="branch-card glow-yellow" id="redes">
+            <div class="branch-header">
+                <div class="branch-icon">🌐</div>
+                <div class="branch-num">06</div>
+            </div>
+            <h3 class="branch-title">Redes e Infraestructura</h3>
+            <p class="branch-desc">El esqueleto digital del mundo. Sin redes, no hay internet, no hay comunicación, no hay nada.</p>
+            <div class="branch-subs">
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Administración de Redes</strong>
+                        <span>Configurar routers, switches, firewalls y gestionar LAN/WAN empresariales.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot orange"></span>
+                    <div>
+                        <strong>Redes Inalámbricas &amp; 5G</strong>
+                        <span>Diseño de infraestructura WiFi, redes celulares y comunicaciones móviles.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot yellow"></span>
+                    <div>
+                        <strong>IoT (Internet of Things)</strong>
+                        <span>Conectar dispositivos físicos a internet: hogares inteligentes, ciudades inteligentes, industria 4.0.</span>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <span class="sub-dot cyan"></span>
+                    <div>
+                        <strong>Administración de Sistemas</strong>
+                        <span>Gestión de servidores Linux/Windows, virtualización, backup y monitoreo.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-tools">
+                <span class="tool-badge">Cisco</span><span class="tool-badge">Linux</span>
+                <span class="tool-badge">VMware</span><span class="tool-badge">Ansible</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TECNOLOGÍAS POPULARES -->
+<section class="section alt-bg" id="techs">
+    <div class="section-label">// 02 — TECNOLOGÍAS CLAVE</div>
+    <h2 class="section-title centered">Tecnologías que <span class="accent-orange">dominarás</span></h2>
+    <div class="tech-scroll-wrapper">
+        <div class="tech-scroll">
+            <div class="tech-item"><span class="tech-name">Python</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">JavaScript</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">Java</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">React</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">AWS</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">Docker</span><span class="tech-level med">Media-alta</span></div>
+            <div class="tech-item"><span class="tech-name">SQL</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">Linux</span><span class="tech-level high">Alta demanda</span></div>
+            <div class="tech-item"><span class="tech-name">Git</span><span class="tech-level high">Esencial</span></div>
+            <div class="tech-item"><span class="tech-name">Kubernetes</span><span class="tech-level med">Media-alta</span></div>
+            <div class="tech-item"><span class="tech-name">TensorFlow</span><span class="tech-level med">Media-alta</span></div>
+            <div class="tech-item"><span class="tech-name">C++</span><span class="tech-level med">Media-alta</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICACIONES -->
+<section class="section" id="certs">
+    <div class="section-label">// 03 — CERTIFICACIONES VALORADAS</div>
+    <h2 class="section-title centered">Certificaciones que <span class="accent-yellow">potencian</span> tu carrera</h2>
+    <div class="certs-grid">
+        <div class="cert-card">
+            <div class="cert-provider">Amazon Web Services</div>
+            <h3>AWS Certified Solutions Architect</h3>
+            <p>La certificación cloud más solicitada del mundo. Demuestra dominio de infraestructuras AWS.</p>
+            <div class="cert-value">+30% salario promedio</div>
+        </div>
+        <div class="cert-card">
+            <div class="cert-provider">Google</div>
+            <h3>Google Professional Data Engineer</h3>
+            <p>Certifica habilidades en procesamiento de datos, machine learning y arquitecturas GCP.</p>
+            <div class="cert-value">+25% salario promedio</div>
+        </div>
+        <div class="cert-card">
+            <div class="cert-provider">EC-Council</div>
+            <h3>Certified Ethical Hacker (CEH)</h3>
+            <p>El estándar de la industria para profesionales de seguridad ofensiva y pentesting.</p>
+            <div class="cert-value">+35% salario promedio</div>
+        </div>
+        <div class="cert-card">
+            <div class="cert-provider">Scrum Alliance</div>
+            <h3>Certified Scrum Master (CSM)</h3>
+            <p>Gestión ágil de proyectos de software. Esencial para liderar equipos de desarrollo.</p>
+            <div class="cert-value">+20% salario promedio</div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

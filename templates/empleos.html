@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+{% block title %}Ingeniería en Sistemas | Empleos{% endblock %}
+{% block content %}
+
+<section class="page-hero">
+    <div class="page-hero-bg-text">EMPLEOS</div>
+    <div class="page-hero-content">
+        <div class="hero-tag">// SALIDAS LABORALES //</div>
+        <h1 class="page-hero-title glitch">MERCADO <span class="hero-accent">LABORAL</span></h1>
+        <p class="page-hero-sub">Descubre dónde trabajan los ingenieros en sistemas, cuánto ganan y qué empresas los buscan.</p>
+    </div>
+</section>
+
+<!-- INDUSTRIAS -->
+<section class="section" id="industrias">
+    <div class="section-label">// 01 — DÓNDE TRABAJAN</div>
+    <h2 class="section-title centered">Industrias que <span class="accent-cyan">contratan</span> ingenieros en sistemas</h2>
+    <div class="industries-grid">
+        <div class="industry-card">
+            <div class="industry-icon">🏦</div>
+            <h3>Fintech &amp; Banca</h3>
+            <p>Sistemas bancarios, apps de pago, análisis de riesgo, blockchain, seguridad financiera.</p>
+            <div class="industry-companies">Visa · Mastercard · PayPal · Nubank</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">🏥</div>
+            <h3>Salud &amp; Biotech</h3>
+            <p>Expedientes médicos electrónicos, diagnóstico por IA, dispositivos médicos conectados, telemedicina.</p>
+            <div class="industry-companies">Epic Systems · Siemens Healthineers</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">🛒</div>
+            <h3>E-Commerce &amp; Retail</h3>
+            <p>Plataformas de venta online, logística automatizada, sistemas de recomendación, experiencia de usuario.</p>
+            <div class="industry-companies">Amazon · Mercado Libre · Shopify</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">🎮</div>
+            <h3>Gaming &amp; Entretenimiento</h3>
+            <p>Desarrollo de videojuegos, motores gráficos, plataformas de streaming, realidad virtual y aumentada.</p>
+            <div class="industry-companies">Epic Games · Netflix · Unity</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">🚗</div>
+            <h3>Automotriz &amp; Movilidad</h3>
+            <p>Vehículos autónomos, sistemas embebidos, software de navegación, gestión de flotas eléctricas.</p>
+            <div class="industry-companies">Tesla · Waymo · Uber · BMW</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">✈️</div>
+            <h3>Aeroespacial &amp; Defensa</h3>
+            <p>Software de control de vuelo, sistemas de navegación, satélites, simuladores y sistemas de misión.</p>
+            <div class="industry-companies">NASA · SpaceX · Lockheed Martin</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">📚</div>
+            <h3>Educación &amp; EdTech</h3>
+            <p>Plataformas de aprendizaje online, sistemas de gestión escolar, herramientas de evaluación digital.</p>
+            <div class="industry-companies">Coursera · Duolingo · Khan Academy</div>
+        </div>
+        <div class="industry-card">
+            <div class="industry-icon">🏛️</div>
+            <h3>Gobierno &amp; Sector Público</h3>
+            <p>Digitalización de servicios públicos, ciberseguridad nacional, sistemas de gestión gubernamental.</p>
+            <div class="industry-companies">MINFIN · SAT · Gobiernos municipales</div>
+        </div>
+    </div>
+</section>
+
+<!-- PUESTOS DE TRABAJO -->
+<section class="section alt-bg" id="puestos">
+    <div class="section-label">// 02 — PUESTOS DE TRABAJO</div>
+    <h2 class="section-title centered">Los puestos más <span class="accent-orange">buscados</span></h2>
+    <div class="jobs-table-wrapper">
+        <div class="jobs-table">
+            <div class="jobs-header">
+                <span>PUESTO</span>
+                <span>ÁREA</span>
+                <span>SALARIO (USD/año)</span>
+                <span>DEMANDA</span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Software Engineer</span>
+                <span class="job-area">Desarrollo</span>
+                <span class="job-salary salary-high">$80,000 – $150,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:95%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Data Scientist</span>
+                <span class="job-area">Datos / IA</span>
+                <span class="job-salary salary-high">$90,000 – $160,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:92%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Cybersecurity Analyst</span>
+                <span class="job-area">Seguridad</span>
+                <span class="job-salary salary-high">$75,000 – $140,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:90%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Cloud Architect</span>
+                <span class="job-area">Cloud / Infraestructura</span>
+                <span class="job-salary salary-high">$110,000 – $200,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:88%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Machine Learning Engineer</span>
+                <span class="job-area">IA / ML</span>
+                <span class="job-salary salary-high">$100,000 – $180,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:93%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">DevOps Engineer</span>
+                <span class="job-area">Operaciones</span>
+                <span class="job-salary salary-med">$85,000 – $145,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:87%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Mobile Developer</span>
+                <span class="job-area">Desarrollo Móvil</span>
+                <span class="job-salary salary-med">$70,000 – $130,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:82%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Database Administrator</span>
+                <span class="job-area">Datos</span>
+                <span class="job-salary salary-med">$65,000 – $110,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:75%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Network Engineer</span>
+                <span class="job-area">Redes</span>
+                <span class="job-salary salary-med">$60,000 – $120,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:78%"></span></span>
+            </div>
+            <div class="job-row">
+                <span class="job-title">Scrum Master / PM</span>
+                <span class="job-area">Gestión de Proyectos</span>
+                <span class="job-salary salary-med">$70,000 – $130,000</span>
+                <span class="job-demand"><span class="demand-bar" style="--w:80%"></span></span>
+            </div>
+        </div>
+        <div class="table-note">* Salarios globales aproximados. Varían por país, experiencia y empresa.</div>
+    </div>
+</section>
+
+<!-- TRAYECTORIA PROFESIONAL -->
+<section class="section" id="trayectoria">
+    <div class="section-label">// 03 — CRECIMIENTO PROFESIONAL</div>
+    <h2 class="section-title centered">Tu <span class="accent-yellow">trayectoria</span> profesional</h2>
+    <p class="section-intro">Así evoluciona la carrera de un ingeniero en sistemas a lo largo del tiempo:</p>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-marker tm-cyan"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">Año 0–2</div>
+                <h3>Junior Developer / Trainee</h3>
+                <p>Aprender las bases reales del trabajo, colaborar en proyectos pequeños, usar frameworks populares.</p>
+                <div class="timeline-salary">$25,000 – $45,000 / año</div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-marker tm-orange"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">Año 2–5</div>
+                <h3>Mid-Level Developer / Especialista</h3>
+                <p>Liderar módulos del proyecto, mentorear juniors, especializarse en una tecnología o rama concreta.</p>
+                <div class="timeline-salary">$45,000 – $80,000 / año</div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-marker tm-yellow"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">Año 5–10</div>
+                <h3>Senior Engineer / Tech Lead</h3>
+                <p>Diseñar arquitecturas, guiar equipos técnicos, tomar decisiones de stack y estrategia tecnológica.</p>
+                <div class="timeline-salary">$80,000 – $140,000 / año</div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-marker tm-cyan"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">Año 10+</div>
+                <h3>Principal / Staff Engineer / CTO / Fundador</h3>
+                <p>Definir la visión técnica de toda una empresa, fundar startups, consultoría o posiciones ejecutivas.</p>
+                <div class="timeline-salary">$140,000 – $500,000+ / año</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODALIDADES DE TRABAJO -->
+<section class="section alt-bg" id="modalidades">
+    <div class="section-label">// 04 — MODALIDADES LABORALES</div>
+    <h2 class="section-title centered">Formas de <span class="accent-cyan">trabajar</span></h2>
+    <div class="modes-grid">
+        <div class="mode-card">
+            <div class="mode-icon">🏢</div>
+            <h3>Empleado en empresa</h3>
+            <p>Trabajo estable con salario fijo, beneficios, vacaciones y seguro. Ideal para construir experiencia y red de contactos.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Estabilidad</span>
+                <span class="pro-tag">Beneficios</span>
+                <span class="pro-tag">Mentoría</span>
+            </div>
+        </div>
+        <div class="mode-card">
+            <div class="mode-icon">💻</div>
+            <h3>Freelancer / Independiente</h3>
+            <p>Trabajar por proyectos para múltiples clientes. Libertad total de horarios, lugar y tipo de trabajo.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Libertad</span>
+                <span class="pro-tag">Potencial alto</span>
+                <span class="pro-tag">Variedad</span>
+            </div>
+        </div>
+        <div class="mode-card">
+            <div class="mode-icon">🌍</div>
+            <h3>Remote Work Global</h3>
+            <p>Trabajar para empresas del primer mundo (USA, Europa) desde cualquier país, con salarios internacionales.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Salarios top</span>
+                <span class="pro-tag">Desde casa</span>
+                <span class="pro-tag">Global</span>
+            </div>
+        </div>
+        <div class="mode-card">
+            <div class="mode-icon">🚀</div>
+            <h3>Emprendimiento / Startup</h3>
+            <p>Crear tu propia empresa tecnológica. Alto riesgo pero con potencial de ganancias y libertad ilimitados.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Impacto</span>
+                <span class="pro-tag">Autonomía</span>
+                <span class="pro-tag">Potencial</span>
+            </div>
+        </div>
+        <div class="mode-card">
+            <div class="mode-icon">🎓</div>
+            <h3>Investigación &amp; Academia</h3>
+            <p>Docencia universitaria, investigación en centros tecnológicos, publicación científica y desarrollo de nuevas tecnologías.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Impacto social</span>
+                <span class="pro-tag">Crecimiento</span>
+                <span class="pro-tag">Publicaciones</span>
+            </div>
+        </div>
+        <div class="mode-card">
+            <div class="mode-icon">🔧</div>
+            <h3>Consultoría IT</h3>
+            <p>Asesorar empresas en transformación digital, auditorías de seguridad, implementación de sistemas y estrategia tecnológica.</p>
+            <div class="mode-pros">
+                <span class="pro-tag">Alta paga</span>
+                <span class="pro-tag">Variedad</span>
+                <span class="pro-tag">Impacto</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EMPRESAS TOP -->
+<section class="section" id="empresas">
+    <div class="section-label">// 05 — EMPRESAS TOP</div>
+    <h2 class="section-title centered">Empresas que <span class="accent-orange">sueñan</span> con ingenieros en sistemas</h2>
+    <div class="companies-marquee">
+        <div class="marquee-inner">
+            <span class="company-name">Google</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Microsoft</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Amazon</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Apple</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Meta</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Netflix</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Tesla</span>
+            <span class="sep">◆</span>
+            <span class="company-name">SpaceX</span>
+            <span class="sep">◆</span>
+            <span class="company-name">IBM</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Oracle</span>
+            <span class="sep">◆</span>
+            <span class="company-name">SAP</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Salesforce</span>
+            <span class="sep">◆</span>
+            <span class="company-name">GitHub</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Stripe</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Airbnb</span>
+            <span class="sep">◆</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="company-name">Google</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Microsoft</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Amazon</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Apple</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Meta</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Netflix</span>
+            <span class="sep">◆</span>
+            <span class="company-name">Tesla</span>
+            <span class="sep">◆</span>
+            <span class="company-name">SpaceX</span>
+            <span class="sep">◆</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONSEJO FINAL -->
+<section class="section alt-bg" id="consejo">
+    <div class="section-label">// 06 — CONSEJO FINAL</div>
+    <div class="advice-box">
+        <div class="advice-icon">⚡</div>
+        <h2>¿Por qué elegir Ingeniería en Sistemas?</h2>
+        <div class="advice-points">
+            <div class="advice-point">
+                <span class="adv-num">01</span>
+                <p><strong>Trabajo garantizado:</strong> La demanda de ingenieros en sistemas supera la oferta en casi todos los países. Siempre habrá trabajo.</p>
+            </div>
+            <div class="advice-point">
+                <span class="adv-num">02</span>
+                <p><strong>Puedes trabajar desde cualquier lugar:</strong> Es una de las pocas carreras donde puedes ganar en dólares mientras vives en Latinoamérica.</p>
+            </div>
+            <div class="advice-point">
+                <span class="adv-num">03</span>
+                <p><strong>Impacto global:</strong> Lo que construyes puede usar millones de personas. Pocas carreras tienen ese nivel de impacto directo en el mundo.</p>
+            </div>
+            <div class="advice-point">
+                <span class="adv-num">04</span>
+                <p><strong>Siempre evoluciona:</strong> Nunca te aburrirás. La tecnología cambia constantemente, lo que significa que siempre habrá algo nuevo que aprender y dominar.</p>
+            </div>
+        </div>
+        <div class="advice-cta">
+            <a href="{{ url_for('index') }}" class="btn-primary">← VOLVER AL INICIO</a>
+            <a href="{{ url_for('ramas') }}" class="btn-secondary">VER RAMAS →</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

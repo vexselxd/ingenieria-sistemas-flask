@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% block title %}Ingeniería en Sistemas | Inicio{% endblock %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-bg-text">01010011 01011001 01010011</div>
+    <div class="hero-content">
+        <div class="hero-tag">// CARRERA DEL FUTURO //</div>
+        <h1 class="hero-title glitch">INGENIERÍA<br><span class="hero-accent">EN SISTEMAS</span></h1>
+        <p class="hero-subtitle">Construye el mundo digital. Diseña el mañana. <br>Domina la tecnología que mueve el planeta.</p>
+        <div class="hero-cta">
+            <a href="{{ url_for('ramas') }}" class="btn-primary">EXPLORAR RAMAS</a>
+            <a href="{{ url_for('empleos') }}" class="btn-secondary">VER EMPLEOS</a>
+        </div>
+        <div class="hero-scroll">▼ SCROLL ▼</div>
+    </div>
+    <div class="hero-circuit">
+        <div class="circuit-line c1"></div>
+        <div class="circuit-line c2"></div>
+        <div class="circuit-line c3"></div>
+        <div class="circuit-node n1"></div>
+        <div class="circuit-node n2"></div>
+        <div class="circuit-node n3"></div>
+    </div>
+</section>
+
+<!-- QUÉ ES LA CARRERA -->
+<section class="section" id="que-es">
+    <div class="section-label">// 01 — DEFINICIÓN</div>
+    <div class="section-grid">
+        <div class="section-text">
+            <h2 class="section-title">¿Qué es la <span class="accent-orange">Ingeniería en Sistemas</span>?</h2>
+            <p>La Ingeniería en Sistemas es una disciplina que integra la <strong class="text-cyan">informática</strong>, las <strong class="text-orange">matemáticas</strong> y la <strong class="text-yellow">ingeniería</strong> para diseñar, desarrollar y gestionar sistemas computacionales complejos.</p>
+            <p>No se trata solo de programar — es sobre <em>arquitectar soluciones</em>, entender algoritmos, gestionar bases de datos, diseñar redes, crear inteligencia artificial y transformar problemas reales en sistemas funcionales.</p>
+            <p>Es la carrera que impulsa desde las apps que usas a diario hasta los satélites, sistemas bancarios y motores de búsqueda que mueven el mundo.</p>
+        </div>
+        <div class="info-card card-glow-cyan">
+            <div class="card-header">
+                <span class="card-icon">💡</span>
+                <span class="card-title">DATOS RÁPIDOS</span>
+            </div>
+            <ul class="card-list">
+                <li><span class="li-dot cyan"></span> Duración: 4 a 5 años</li>
+                <li><span class="li-dot orange"></span> Modalidad: Presencial / Virtual</li>
+                <li><span class="li-dot yellow"></span> Nivel: Licenciatura / Ingeniería</li>
+                <li><span class="li-dot cyan"></span> Campo: Global y 100% digital</li>
+                <li><span class="li-dot orange"></span> Crecimiento: +25% anual</li>
+                <li><span class="li-dot yellow"></span> Demanda: Alta en todo el mundo</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- QUÉ SE ESTUDIA -->
+<section class="section alt-bg" id="que-estudia">
+    <div class="section-label">// 02 — CONTENIDO ACADÉMICO</div>
+    <h2 class="section-title centered">¿Qué se estudia en la carrera?</h2>
+    <div class="topics-grid">
+        <div class="topic-card" style="--accent: var(--cyan)">
+            <div class="topic-icon">⟨/⟩</div>
+            <h3>Programación</h3>
+            <p>Java, Python, C++, JavaScript, Kotlin. Desde la lógica básica hasta patrones de diseño avanzados.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--orange)">
+            <div class="topic-icon">🗄️</div>
+            <h3>Bases de Datos</h3>
+            <p>SQL, NoSQL, diseño relacional, optimización de consultas, MongoDB, PostgreSQL, Oracle.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--yellow)">
+            <div class="topic-icon">🌐</div>
+            <h3>Redes y Comunicaciones</h3>
+            <p>Protocolos TCP/IP, configuración de servidores, seguridad de red, VPNs y arquitecturas cloud.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--cyan)">
+            <div class="topic-icon">🔐</div>
+            <h3>Seguridad Informática</h3>
+            <p>Criptografía, pentesting, seguridad web, protección de datos y gestión de vulnerabilidades.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--orange)">
+            <div class="topic-icon">🤖</div>
+            <h3>Inteligencia Artificial</h3>
+            <p>Machine Learning, Deep Learning, redes neuronales, procesamiento de lenguaje natural, visión computacional.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--yellow)">
+            <div class="topic-icon">📐</div>
+            <h3>Algoritmos y Estructuras</h3>
+            <p>Ordenamiento, búsqueda, grafos, complejidad computacional y optimización de procesos.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--cyan)">
+            <div class="topic-icon">☁️</div>
+            <h3>Cloud Computing</h3>
+            <p>AWS, Azure, Google Cloud, arquitectura serverless, contenedores Docker y Kubernetes.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--orange)">
+            <div class="topic-icon">📱</div>
+            <h3>Desarrollo de Software</h3>
+            <p>Metodologías ágiles, SCRUM, ciclo de vida del software, pruebas, deployment y DevOps.</p>
+        </div>
+        <div class="topic-card" style="--accent: var(--yellow)">
+            <div class="topic-icon">∑</div>
+            <h3>Matemáticas</h3>
+            <p>Cálculo, álgebra lineal, estadística, matemática discreta y lógica computacional.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section" id="stats">
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="4500000">0</span>+</div>
+            <div class="stat-label">Empleos globales en TI</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">$<span class="counter" data-target="95000">0</span></div>
+            <div class="stat-label">Salario promedio (USD/año)</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="25">0</span>%</div>
+            <div class="stat-label">Crecimiento anual del sector</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number"><span class="counter" data-target="150">0</span>+</div>
+            <div class="stat-label">Especializaciones posibles</div>
+        </div>
+    </div>
+</section>
+
+<!-- QUÉ PUEDES HACER -->
+<section class="section" id="que-hacer">
+    <div class="section-label">// 03 — PROYECTOS REALES</div>
+    <h2 class="section-title centered">¿Qué podrías <span class="accent-orange">crear</span>?</h2>
+    <p class="section-intro">Estas son aplicaciones y proyectos reales que los ingenieros en sistemas construyen:</p>
+    <div class="projects-list">
+        <div class="project-item">
+            <div class="project-num">01</div>
+            <div class="project-info">
+                <h3>Sistema de Pagos Móvil</h3>
+                <p>Desarrollar una app tipo Venmo o PayPal con autenticación segura, cifrado bancario y transacciones en tiempo real usando APIs REST y blockchain.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">React Native</span><span class="tag">PostgreSQL</span><span class="tag">Blockchain</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-num">02</div>
+            <div class="project-info">
+                <h3>Motor de Recomendación con IA</h3>
+                <p>Como los de Netflix o Spotify: un sistema que aprende los gustos del usuario y sugiere contenido personalizado usando Machine Learning y análisis de datos.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">MongoDB</span><span class="tag">Flask</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-num">03</div>
+            <div class="project-info">
+                <h3>Sistema de Seguridad Hospitalaria</h3>
+                <p>Gestión de expedientes médicos con acceso controlado, historial de pacientes, integración con dispositivos médicos IoT y alertas en tiempo real.</p>
+                <div class="project-tags">
+                    <span class="tag">Java</span><span class="tag">AWS</span><span class="tag">IoT</span><span class="tag">Seguridad</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-num">04</div>
+            <div class="project-info">
+                <h3>Plataforma de E-Learning</h3>
+                <p>Una plataforma educativa online con video en streaming, evaluaciones automáticas, certificados digitales y seguimiento del progreso del estudiante.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">WebRTC</span><span class="tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-num">05</div>
+            <div class="project-info">
+                <h3>Chatbot de Atención al Cliente con IA</h3>
+                <p>Un asistente virtual inteligente capaz de responder consultas, procesar pedidos, escalar tickets y aprender de cada interacción usando NLP.</p>
+                <div class="project-tags">
+                    <span class="tag">NLP</span><span class="tag">Python</span><span class="tag">Dialogflow</span><span class="tag">API REST</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CARRERAS SIMILARES -->
+<section class="section alt-bg" id="similares">
+    <div class="section-label">// 04 — ALTERNATIVAS</div>
+    <h2 class="section-title centered">Carreras <span class="accent-cyan">similares</span></h2>
+    <div class="similar-grid">
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--cyan)">🖥️</div>
+            <h3>Ciencias de la Computación</h3>
+            <p>Más enfocada en teoría, algoritmos, matemáticas formales y fundamentos del cómputo. Ideal para investigación y academia.</p>
+            <div class="similar-diff">Más teórica que IS</div>
+        </div>
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--orange)">⚡</div>
+            <h3>Ing. Electrónica / Eléctrica</h3>
+            <p>Combina hardware y software. Trabaja con circuitos, microcontroladores, sistemas embebidos y automatización industrial.</p>
+            <div class="similar-diff">Más hardware que IS</div>
+        </div>
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--yellow)">📊</div>
+            <h3>Ing. en Software</h3>
+            <p>Especialización pura en desarrollo de software: diseño, arquitectura, pruebas y mantenimiento de aplicaciones.</p>
+            <div class="similar-diff">Subconjunto de IS</div>
+        </div>
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--cyan)">🔒</div>
+            <h3>Ciberseguridad</h3>
+            <p>Especialización en protección de sistemas, análisis forense digital, ethical hacking y defensa ante ciberataques.</p>
+            <div class="similar-diff">Rama de IS</div>
+        </div>
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--orange)">📡</div>
+            <h3>Ing. en Telecomunicaciones</h3>
+            <p>Diseño de redes de comunicación, sistemas de transmisión de datos, fibra óptica, 5G y comunicaciones satelitales.</p>
+            <div class="similar-diff">Más redes que IS</div>
+        </div>
+        <div class="similar-card">
+            <div class="similar-icon" style="color:var(--yellow)">🤖</div>
+            <h3>Robótica e IA</h3>
+            <p>Diseño de sistemas autónomos, robots industriales, vehículos autónomos y sistemas de inteligencia artificial avanzada.</p>
+            <div class="similar-diff">Especialización futura</div>
+        </div>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section class="section" id="habilidades">
+    <div class="section-label">// 05 — PERFIL DEL INGENIERO</div>
+    <div class="skills-container">
+        <div class="skills-text">
+            <h2 class="section-title">¿Qué habilidades <span class="accent-yellow">desarrollas</span>?</h2>
+            <p>Un ingeniero en sistemas no solo escribe código — es un solucionador de problemas complejo con habilidades técnicas y blandas que lo hacen esencial en cualquier industria.</p>
+        </div>
+        <div class="skills-bars">
+            <div class="skill-bar">
+                <div class="skill-label">Pensamiento Lógico &amp; Analítico</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:96%; --color: var(--cyan)"></div></div>
+                <span class="bar-pct">96%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-label">Programación &amp; Desarrollo</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:90%; --color: var(--orange)"></div></div>
+                <span class="bar-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-label">Gestión de Proyectos</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:80%; --color: var(--yellow)"></div></div>
+                <span class="bar-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-label">Seguridad &amp; Redes</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:85%; --color: var(--cyan)"></div></div>
+                <span class="bar-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-label">Trabajo en Equipo</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:88%; --color: var(--orange)"></div></div>
+                <span class="bar-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-label">Aprendizaje Continuo</div>
+                <div class="bar-track"><div class="bar-fill" style="--w:100%; --color: var(--yellow)"></div></div>
+                <span class="bar-pct">100%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
